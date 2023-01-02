@@ -1,0 +1,226 @@
+  body{
+    font-family: sans-serif;
+  }
+header.head {
+    background-color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+li {
+    font-size: 15px;
+    padding: 0 15px;
+}
+button.first-btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    background: #44d6b2;
+    color: white;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    box-shadow: -60px 0px 50px 0px #29e37f inset;
+    border-radius: 5px;
+}
+.navbar-default1 .navbar-nav>li>a {
+    color: #000;
+    font-size: 18px;
+}
+.row h3 {
+    font-size: 50px;
+}
+h1 {
+    font-size: 65px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.h2, h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+.navbar-nav>li {
+    float: left;
+    padding: 0 10px;
+}
+.column-left li{
+  list-style: none;
+}
+.column-right {
+    position: relative;
+}
+.below-img {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    left: -50px;
+    right: 0;
+    bottom: -50px;
+    border-radius: 20px;
+}
+.first-col {
+    position: relative;
+}
+.first-col img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+.second-col {
+    margin-left: 35px;
+}
+button.btn {
+    position: absolute;
+    top: -34px;
+    left: 45px;
+    background: white;
+    padding: 10px 20px;
+}
+button.btn h4 {
+    color: grey;
+}
+.second-col h2 {
+    font-weight: 600;
+}
+p {
+    margin: 0 0 10px;
+    font-size: 17px;
+    color: grey;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 30px;
+    background: #45dc9b;
+    padding: 10px;
+    border-radius: 35px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+.icon-column {
+    display: flex;
+    padding: 15px 0;
+}
+button.btn h3 {
+    font-size: 25px;
+}
+.inner-column h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+.inner-box {
+    display: flex;
+    gap: 10px;
+}
+.image {
+    margin-top: 15px;
+}
+.img-para p{
+    font-size: 14px;
+}
+.img-para h4{
+    font-weight: 700;
+}
+.mary-sign {
+    text-align: right;
+}
+#row-2 {
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+#row-2 h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: grey;
+}
+.para p{
+    font-size: 15px;
+    color: black;
+}
+#row-3 {
+    margin-top: 35px;
+}
+.col-md-6 {
+    position: relative;
+}
+button.btn-2 {
+    padding: 15px 25px;
+    border: none;
+}
+button.btn-2 {
+    position: absolute;
+    background: white;
+    padding: 10px 35px;
+    right: 95px;
+    top: 80%;
+    border-radius: 10px;
+}
+#container-1 {
+    text-align: center;
+    background-color: #effffb;
+    margin-top: 35px;
+    padding: 30px 30px;
+}
+button.last-btn {
+    padding: 12px 35px;
+    font-size: 15px;
+    background: #44d6b2;
+    color: white;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    box-shadow: -60px 0px 50px 0px #29e37f inset;
+    border-radius: 5px;
+}
+#container-1 h2{
+    margin-bottom: 25px;
+}
+ul li{
+    list-style: none;
+
+}
+.col-md-3 li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+i.fa-brands.fa-twitter {
+    font-size: 20px;
+    margin-right: 10px;
+}
+i.fa-brands.fa-facebook{
+    font-size: 20px;
+    margin-right: 10px;
+}
+i.fa-brands.fa-youtube {
+    font-size: 20px;
+}
+
+.footer{
+    padding: 40px 40px;
+}
+.col-md-3 li:hover{
+    color: #39d09a;
+}
+i.fa-brands.fa-twitter:hover{
+     color: #39d09a;
+}
+i.fa-brands.fa-facebook:hover{
+   color: #39d09a;
+}
+i.fa-brands.fa-youtube:hover {
+    color: #39d09a;
+}
+@media screen and(max-width: 767px){
+
+}
+section {
+    padding-top: 100px;
+}
+
