@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/0c07aae8c4.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
     <!------header start here------>
   <header class="head">
+<div class="container">
 <nav class="navbar navbar-default1">
-  <div class="container">
-    <div class="navbar-header">
+<div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
+      <a class="navbar-brand" href="#"><img src="images/techup-logo.png" style="width:120px;"></a>
     </div>
-     <a class="navbar-brand" href="#"><img src="images/techup-logo.png" style="width:120px;"></a>
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -58,20 +55,21 @@
          <button class="first-btn">Start now</button>
       </ul>
     </div>
+    </nav>
   </div>
-</nav>
+
 </header><!-------header end here----->
 
-<section>
+<section class="about-section">
 <div class="container">
     <h1><b>About us</b></h1>
   </div>
 </section>
 
-  <section>
-  <div class="container ">
+  <section class="vision-section">
+  <div class="container">
    <div class="row">
-      <div class="col-md-5">
+      <div class="col-sm-6">
          <h5>Our vision</h5>
          <h3><b>We Excel In Delivering Optimal Solutions.</b></h3>
          <div class="column">
@@ -98,8 +96,7 @@
             </div>
          </div>
        </div>
-        <div class="col-md-2"></div>
-         <div class="col-md-5">
+         <div class="col-sm-6">
             <div class="inner-img">
             <img src="https://kits.pixel-show.com/techup/wp-content/uploads/sites/20/elementor/thumbs/creative-business-people-working-on-business-proje-58FUABR-pmc6550c3a631ni15vlwpyttk3nmi10x2zcnj34sow.jpg" style="border-radius: 20px; margin-top: 35px; width: 100%;" class="img-rounded">
           
@@ -110,11 +107,11 @@
    </div>
  </section>
 
-<section>
+<section class="team-section">
   <div class="abt-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
     <div class="first-col">
       <button class="btn">
         <h4>our team</h4>
@@ -123,14 +120,13 @@
     <img src="images/group.jpg">
   </div>
 </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
+      <div class="col-sm-6">
       <h5>who are you </h5>
       <h2>Great Digital Agency Since - 1980.</h2>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
       <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden. </p>
      <div class="row">
-      <div class="col-md-6">     
+      <div class="col-sm-6">     
       <div class="inner-box">
         <div class="image">
           <img src="images/girl-logo.jpg" style="width:40px; height: 40px;" class="img-circle">  
@@ -141,7 +137,7 @@
         </div>
       </div>
         </div>
-      <div class="col-md-6"> 
+      <div class="col-sm-6"> 
         <div class="mary-sign">
         <img src="images/signature.jpg"> 
       </div>
@@ -153,25 +149,25 @@
 </div>
 </div>
 </section>
-<section>
+<section class="blog-section">
     <div class="container">
     <div class="row" id="row-2">
-        <div class="col-md-3">
+        <div class="col-sm-3">
             <h3>Successful work with</h3>
             <h2>1.2M</h2>  
             <h3>CLIENTS WORLDWIDE</h3>
         </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
             <h3>Successfully completed</h3>
               <h2>98</h2> 
               <h3>FINISHED PROJECTS</h3>  
         </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
             <h3>We have more than</h3>
               <h2>1.246</h2> 
               <h3>SKILLED EXPERTS</h3>  
         </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
             <h3>Blog update</h3>
            <h2>980</h2>
            <h3>MEDIA POSTS</h3>    
@@ -179,13 +175,13 @@
     </div>
 </div>
 </section>
-<section>
+<section class="progress-bar-section">
     <div class="container">
     <div class="row" id="row-3">
-        <div class="col-md-5">
-            <p>our skills</p>
+        <div class="col-sm-6">
+            <p class="para">our skills</p>
             <h3>Meet Our Main Skills</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.</p>
             <p style="font-size: 12px; color: black;">Social Media Marketing</p>
             <div class="progress" style="height: 5px;">
             <div class="progress-bar" style="width:80%; background: pink;" >
@@ -203,7 +199,7 @@
          </div>
             </div>
             <div class="col-md-1"></div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
             <img src="images/picture.jpg" style="width:100%; height:400px;" class="img-rounded">
              <button class="btn-2">
             <h5>Write to us.</h5>
@@ -213,24 +209,24 @@
     </div>
 </div>
 </section>
-<section>
+<section class="sign-up-section">
     <div class="container" id="container-1">
         <h5>Start you free trial.</h5>
         <h2>Are You Ready? Claim<br> Your Free Account Now.</h2> 
          <button class="last-btn">SIGN UP</button>      
     </div>
 </section>
-<section>
+<section class="footer">
     <div class="container">
         <div class="row" style="margin-top: 35px;">
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
             <img src="images/techup-logo.png" style="width:120px;">
             <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-youtube"></i>
             </div>
-            <div class="col-md-3" id="col-md-3 li">
+            <div class="col-sm-6 col-md-3">
             <ul>
                  <li style="font-size: 15px; color:grey;">Services</li>
                 <li>How it works</li>
@@ -241,7 +237,7 @@
                 <li>Collaboration</li>
             </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
               <ul>
                  <li style="font-size: 15px; color:grey;">About</li>
                 <li>Our mission</li>
@@ -252,12 +248,12 @@
                 <li>Live Chat</li>
             </ul>  
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <h4 style="font-weight: 600;">We accept all major credit cards for fast and easy payment.</h4>
                 <p>hello@yourdomain.com</p>
                 <p>69 Queen St, Melbourne Australia</p>
                 <p>+7 (928)-123-45-45</p>
-                <img src="images/screenshot-2.jpg" style="width: 250px;">
+                <img src="images/screenshot-2.jpg" class="p-card">
             </div>
         </div>   
     </div>
@@ -268,5 +264,10 @@
         
     </div>
 </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/0c07aae8c4.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

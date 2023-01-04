@@ -13,11 +13,11 @@ img{
 }
 .grid-section {
     display: flex;
-    width: 32%;
+    width: 31%;
     display: -webkit-inline-box;
     margin-right: 17px;
     background-color: #f9f2f2;
-    padding: 45px;
+    padding: 28px;
     border-radius: 15px;
 }
 .grid-area {
@@ -30,33 +30,45 @@ img{
 }
 .a {
     grid-area: a;
-    height: 500px;
+    height: 415px;
+    width: 185px;
     object-fit: cover;
 }
 .b {
     grid-area: b;
-    height: 234px;
+    height: 200px;
     object-fit: cover;
+     width: 158px;
 }
 .c {
     grid-area: c;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
+    width: 158px;
 }
-
+.image-content{
+  display: flex;
+}
 
 
 </style>
 <body>
-
-<div class="grid-section">
+  <div class="container">
+  <div class="grid-section">
 <div class="grid-area">
    <img src="images/img-1.jpeg" class="a">
     <img src="images/img-2.jpeg" class="b">
       <img src="images/img-3.jpeg" class="c">
-      <div class="image">
-          <img src="images/img-5.jpeg" style="width:70px; height: 70px;" class="img-circle">  
+      <div class="image-content">
+          <img src="images/img-3.jpeg" style="width:70px; height: 70px; border-radius: 100px;" > 
+          <h4>Vivian Li</h4> 
+          
         </div>
+         <ul>
+            <li>USA</li>
+            <li>Fashion</li>
+            <li>Lifestyle</li>
+          </ul>
     </div>
 </div>
 <div class="grid-section">
@@ -64,6 +76,10 @@ img{
    <img src="images/img-4.jpeg" class="a">
     <img src="images/img-5.jpeg" class="b">
       <img src="images/img-6.jpeg" class="c">
+      <div class="image-content">
+          <img src="images/img-6.jpeg" style="width:70px; height: 70px; border-radius: 100px;" >  
+          <h4>Jennifer Melengele</h4>
+        </div>
     </div>
 </div>
 <div class="grid-section">
@@ -71,8 +87,47 @@ img{
    <img src="images/img-7.png" class="a">
     <img src="images/img-9.jpeg" class="b">
       <img src="images/img-8.png" class="c">
+       <div class="image-content">
+          <img src="images/img-9.jpeg" style="width:70px; height: 70px; border-radius: 100px;" > 
+          <h4>Amy lema</h4>
+         
+        </div>
+    </div>
+</div>
+<div class="grid-section">
+<div class="grid-area">
+   <img src="images/img-1.jpeg" class="a">
+    <img src="images/img-2.jpeg" class="b">
+      <img src="images/img-3.jpeg" class="c">
+      <div class="image-content">
+          <img src="images/img-3.jpeg" style="width:70px; height: 70px; border-radius: 100px;" > 
+          <h4>Vivian Li</h4> 
+        </div>
+    </div>
+</div>
+<div class="grid-section">
+<div class="grid-area">
+   <img src="images/img-7.png" class="a">
+    <img src="images/img-9.jpeg" class="b">
+      <img src="images/img-8.png" class="c">
+       <div class="image-content">
+          <img src="images/img-9.jpeg" style="width:70px; height: 70px; border-radius: 100px;" > 
+          <h4>Amy lema</h4>
+        </div>
     </div>
 </div>
 
+<div class="grid-section">
+<div class="grid-area">
+   <img src="images/img-4.jpeg" class="a">
+    <img src="images/img-5.jpeg" class="b">
+      <img src="images/img-6.jpeg" class="c">
+      <div class="image-content">
+          <img src="images/img-6.jpeg" style="width:70px; height: 70px; border-radius: 100px;" >  
+          <h4>Jennifer Melengele</h4>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
