@@ -1,0 +1,273 @@
+
+body {
+  margin: 0;  
+  padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.head {
+    position: fixed;
+    background: white;
+    top: 0;
+    width: inherit;
+}
+.col-sm-3 {
+    flex: 0 0 auto;
+    width: 21%;
+}
+.inner-box {
+    display: flex;
+    gap: 10px;
+}
+.main-section p {
+    font-size: 12px;
+}
+.main-section h5{
+  font-size: 16px;
+}
+.column {
+    background:#e0faff;
+    padding: 10px 0px 10px 16px;
+}
+.search-group input[type="search"] {
+    padding: 9px 5px;
+    width: -webkit-fill-available;
+    border: none;
+}
+i.fa.fa-th {
+    background: white;
+    padding: 10px 10px;
+    font-size: 19px;
+    margin-left: 18px;
+    border-radius: 7px;
+}
+.main-section img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.search-bx {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.search-group {
+    background: white;
+    padding: 0px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.search-group i {
+    padding-right: 10px;
+}
+.top-icon-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.main-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-btn button {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    border-radius: 10px;
+}
+i.fa-solid.fa-video {
+    margin-right: 5px;
+}
+i.fa-solid.fa-file {
+    margin-right: 5px;
+}
+.para p{
+    font-size: 17px;
+    padding: 0 5px;
+}
+.Notification {
+    position: relative;
+}
+span.badge.bg-danger {
+    font-size: 7px;
+    border-radius: 20px;
+    position: absolute;
+}
+.list {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.list-active {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    background: #e0faff;
+}
+.list-active i {
+    color: #f9f938;
+    background: black;
+    border-radius: 12px;
+}
+.list i {
+    color: #f9f938;
+    background: black;
+    border-radius: 12px;
+}
+.head {
+    position: fixed;
+    background: white;
+    top: 0;
+    width: inherit;
+    z-index: 99;
+}
+.chat-list {
+    position: absolute;
+    width: inherit;
+    height: 500px;
+    top: 289px;
+    overflow: auto;
+}
+
+p.time-para {
+    margin: -50px 15px;
+}
+.list-head {
+    display: flex;
+    gap: 21px;
+    margin-left: 15px;
+    width: 100%;
+}
+.list-head h5 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.header {
+    padding: 10px 0  0;
+    border-bottom: 1px solid #bcb7b7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    width: 80%;
+}
+.list-icon li {
+    display: inline;
+    margin: 15px;
+}
+ul.meeting-logo {
+    float: right;
+    margin: 15px;
+}
+li.video-logo {
+    background: #6b6bff;
+    color: white;
+    padding: 12px 12px;
+    font-size: 15px;
+    border-radius: 100px;
+}
+li.phone-logo {
+    font-size: 20px;
+    background: #6b6bff;
+    padding: 10px 12px;
+    color: white;
+    border-radius: 100px;
+    margin-left: 0;
+}
+li{
+    font-size: 20px;
+}
+footer {
+    position: fixed;
+    background: white;
+    bottom: 0;
+    width: 75%;
+}
+input[type="text"] {
+    width: 55%;
+    padding: 11px 15px;
+    border: 1px solid #d4d4d4;
+    border-radius: 22px;
+    margin: 0 0 25px 0;
+    background: #bababa5c;
+}
+i#smile-logo {
+    margin-left: 35px;
+    padding: 12px 12px;
+    font-size: 34px;
+}
+.footer-logo  li {
+    display: inline;
+    margin: 15px;
+}
+ul.footer-logo {
+    float: right;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.footer-logo  li {
+    display: inline;
+   background: #bababa5c;
+    padding: 10px 12px;
+    margin: 0 10px;
+    border-radius: 30px;
+}
+.time-para{
+    float: right;
+}
+.dot {
+    background: #4dcc4d;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    position: absolute;
+    left: 40px;
+    right: 0;
+    margin: -7px;
+}
+.offline-dot {
+    background: #e6e602;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    position: absolute;
+    left: 40px;
+    right: 0;
+    margin: -7px;
+}
+.chat-list h5{
+    font-size: 15px;
+}
+.chat-list p{
+    font-size: 14px;
+}
+.chating {
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+.footer-menu {
+    position: relative;
+}
+#chating-smile {
+    font-size: 85px;
+    color: #d9d90a;
+    background: black;
+    border-radius: 65px;
+    position: relative;
+}
+img#chating-img {
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    bottom: -8px;
+    right: -5px;
+}
