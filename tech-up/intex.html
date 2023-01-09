@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/0c07aae8c4.js" crossorigin="anonymous"></script>
+   <style type="text/css">
+body{
+	font-family: sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+.header {
+    background-color: #292991;
+    height: 102px;
+}
+.index-img {
+    height: 65px;
+    width: 100px;
+    margin: 20px;
+}
+ul.index-list {
+    float: right;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.header li {
+    list-style: none;
+    padding: 26px 13px;
+    font-size: 20px;
+    text-align: center;
+}
+.header li:last-child{
+	margin-right: 25px;
+}
+.header li a {
+    color: #7ff1ff;
+}
+.header li:hover {
+    background-color: #19bbd0;
+}
+p {
+    font-size: 13px;
+     color: white;
+     margin: 0 0;
+}
+.main-body {
+    text-align: center;
+}
+.main-body h4 {
+    font-size: 35px;
+    color: white;
+    margin-top: 50px;
+}
+.main-box {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/body-bg.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+input[type="search"] {
+    border: none;
+    padding: 11px 60px;
+}
+i.fa-solid.fa-magnifying-glass {
+    font-size: 25px;
+    color: grey;
+    padding: 0 12px;
+}
+input[type="text"] {
+    border: none;
+    padding: 11px 60px;
+}
+i.fa-solid.fa-location-dot {
+    font-size: 25px;
+    color: grey;
+    padding: 0 12px;
+}
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+button {
+    border: none;
+    margin-right: 15px;
+}
+button.btn.btn-info {
+    padding: 9px 20px;
+    font-size: 18px;
+}
+p.btn-para {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 45px;
+}
+li.nav-item {
+    flex-grow: 1;
+}
+li.nav-item {
+    flex-grow: 1;
+    font-size: 21px;
+    margin: 13px;
+}
+.col-md-6 {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.col-md-6 h4 {
+    color: grey;
+    font-size: 19px;
+}
+.col-md-6 p {
+    color: grey;
+    font-size: 15px;
+}
+li.left-menu {
+    list-style: none;
+    margin: 15px 0;
+}
+ul.location-list {
+    padding: 25px 0;
+}
+li.left-menu {
+    list-style: none;
+    margin: 15px 0;
+    display: flex;
+    gap: 25px;
+}
+ul.nav.nav-tabs {
+    margin-top: 189px;
+}
+.img{
+	width: 200px;
+	height: 200px;
+}
+.img-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 80px;
+    padding-bottom: 0;
+}
+.kt {
+    margin-top: 100px;
+}
+h6 {
+    background: #fff5f5;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    font-size: 24px;
+    border: 5px solid #36b5bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #36b5bb;
+    text-align: center;
+}
+.circle-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-last{
+	width: 250px;
+	height: 250px;
+}
+.last-img {
+    display: flex;
+    margin-top: 30px;
+}
+.footer {
+    margin-top: 15px;
+    width: 100%;
+    height: 300px;
+    background: #0c0c3b;
+}
+.footer .col-sm-3{
+	margin-left: 15px;
+}
+</style>
+</head>
+<body>
+<!-------header-start--------->
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			<div class="col-sm-12">				
+		<img src="images/index-1.jpg" class="index-img">
+		<ul class="index-list">
+			<li><a href="#"><i class="fa-solid fa-list"></i></a>
+			<p>Categories</p>
+			</li>
+			<li><a href="#"><i class="fa fa-fax" aria-hidden="true"></i></a>
+			<p>Manageing list</p>
+			</li>
+			<li><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+				<p>Creat event</p>
+			</li>
+			<li><a href="#"><i class="fa-solid fa-circle-user"></i></a>
+				<p>Log-in</p>
+			</li>
+			<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i></a>
+				<p>sing-up</p>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+</div><!-------header-end----->
+
+	<div class="main-box"><!-------main-box-start---->
+		<div class="container">
+						<div class="row">
+			<div class="col-sm-12">	
+			<div class="main-body">
+				<h4>KIA,ORA WELCOME!</h4>
+		<div class="btn-box">
+			<button>
+				<input type="search" name="search" placeholder="select Categories">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+			<button>
+				<input type="text" name="loc" placeholder="select-location">
+				<i class="fa-solid fa-location-dot"></i>
+			</button>
+			<button class="btn btn-info">search</button>
+		</div>
+			<p class="btn-para">check out what Tiara whiti Gisborne has to offer!</p>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3" >
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">FEATURED BUSSINES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">ABOUT US</a>
+    </li>
+  </ul>
+</div>
+	</div>
+	</div><!-----main-box-end------>
+
+<div class="container"><!----main-container---->
+<div class="row kt">
+<div class="col-md-6"><!-----col-left-start------->
+<h4>Lets'uncover the best place</h4>
+<h3>Discover the best place to stay, eat,shop & visit the nearest place to you!</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<ul class="location-list">
+	<li class="left-menu">
+		<div>
+			<img src="images/menu-1.png">
+		</div>
+		<div class="menu-content">
+		<h5>Choose a catagrey</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+	</li>
+	<li class="left-menu">
+		<div>
+			<img src="images/find.png">
+		</div class="menu-content">
+		<div>
+		<h5>Found what you want</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+	</li>
+	<li class="left-menu">
+		<div>
+			<img src="images/hand-shake.png">
+		</div>
+		<div class="menu-content">
+		<h5>Trusted locals</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+	</li>
+</ul>	
+</div><!-----col-left-end----->
+
+<div class="col-md-6"><!----col-ryt-start---->
+	<div class="img-box">
+	<div class="ryt-img">
+	<img src="images/pick-3.jpeg" class="img">
+</div>
+<div class="ryt-img">
+	<img src="images/pick-2.jpg" class="img">
+</div>
+<div class="ryt-img">
+	<img src="images/pick-4.jpeg" class="img">
+</div>
+<div class="ryt-img">
+	<img src="images/pick-1.jpeg" class="img">
+</div>
+</div>
+<div class="circle-logo">
+	<h6>Explore<br> listing</h6>
+</div>
+</div><!---col-ryt--end--->
+</div>	
+</div>
+
+<div class="container last-img"><!----img-menu----->
+	<div class="row last-row">
+		<div class="col-sm-12">
+		<img src="images/pick-3.jpeg" class="img-last">	
+		<img src="images/pick-2.jpg" class="img-last">
+		<img src="images/pick-4.jpeg" class="img-last">
+		<img src="images/pick-4.jpeg" class="img-last">
+		<img src="images/pick-3.jpeg" class="img-last">		
+		</div>
+	</div>
+</div><!----img-menu-end---->
+
+<div class="footer">
+	<div class="col-sm-3">
+		<img src="images/index-1.jpg" class="index-img">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+
+	<div class="col-sm-3">
+		
+	</div>
+	
+	<div class="col-sm-3">
+		
+	</div>
+	
+	<div class="col-sm-3">
+		
+	</div>
+	
+	
+</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

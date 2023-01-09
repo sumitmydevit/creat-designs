@@ -1,0 +1,13 @@
+.main.head {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+    font-size: 35px;
+}
+p {
+    font-size: 21px;
+    max-width: 665px;
+    margin: 0 auto;
+}

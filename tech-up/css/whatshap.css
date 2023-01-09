@@ -23,7 +23,6 @@ body {
     background: white;
 }
 .container .right-side{
-    display: flex;
     flex: 70%;
     background: #e5ddd5;
 }
@@ -152,7 +151,7 @@ p.number {
 }
 .online-nav {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: #e6e6e6;
 }
 .nav-img {
@@ -167,4 +166,103 @@ p.number {
     height: 45px;
     border-radius: 50px;
     margin: 2px 14px;
+}
+.chat-content-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details-2 {
+    width: 100%;
+}
+.icon {
+    margin: 0 30px;
+}
+i.fa.fa-search {
+    padding: 0 10px;
+}
+.chat-box {
+    position: relative;
+    width: 100%;
+    padding: 20px 20px;
+    height: calc(100% - 120px);
+    overflow: auto;
+}
+.chat-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.chat-box::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.chat-box::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.message-1{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.message-1 p {
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    background: #dcf8c6;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.message-1 p::before
+{
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: red;
+}
+.message-1 p span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+.my-message{
+    justify-content: flex-end;
+}
+.frnd-message{
+    justify-content: flex-start;
+}
+.frnd-message p{
+    background: white;
+    text-align: left;
+}
+.chats-input {
+    font-size: 24px;
+    margin: 5px;
+}
+.chats-input input[type="text"] {
+    width: 89%;
+    border: none;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 0 15px;
+}
+.chats-input {
+    font-size: 24px;
+    margin-top: 9px;
+}
+i#input-icon {
+    margin-top: 10px;
 }
