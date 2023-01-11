@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+.main-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "b b c"
+
+}
+.item1 {
+  grid-area: a;
+  background-color: pink;
+}
+.item2 {
+  grid-area: b;
+  background-color: powderblue;
+}
+.item3{
+  grid-area: c;
+  background-color: lightgreen;
+}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="main-box">
+	<div class="item-1"></div>
+	<div class="item-2"></div>
+	<div class="item-3"></div>
+	</div>
+</div>
+</body>
+</html>

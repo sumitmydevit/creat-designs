@@ -15,19 +15,19 @@ body{
 	box-sizing: border-box;
 }
 .header {
-    background-color: #292991;
-    height: 102px;
+    background-color:#0c0c3b;
 }
 .index-img {
     height: 65px;
     width: 100px;
-    margin: 20px;
+    margin: 35px 10px 17px 10px;
 }
 ul.index-list {
     float: right;
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
 }
 .header li {
     list-style: none;
@@ -40,9 +40,6 @@ ul.index-list {
 }
 .header li a {
     color: #7ff1ff;
-}
-.header li:hover {
-    background-color: #19bbd0;
 }
 p {
     font-size: 13px;
@@ -89,17 +86,25 @@ i.fa-solid.fa-location-dot {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 75px;
 }
-button {
+.main-box button {
     border: none;
     margin-right: 15px;
 }
-button.btn.btn-info {
+.main-box button.btn.btn-info {
     padding: 9px 20px;
     font-size: 18px;
 }
-p.btn-para {
+.main-box button.first-btn {
+    margin: 13px;
+}
+.main-box button.btn.btn-info {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+.main-box p.btn-para {
     font-size: 18px;
     text-align: center;
     margin-top: 45px;
@@ -111,6 +116,9 @@ li.nav-item {
     flex-grow: 1;
     font-size: 21px;
     margin: 13px;
+}
+.header li:hover{
+	background: #0dcaf0;
 }
 .col-md-6 {
     width: 600px;
@@ -134,12 +142,17 @@ ul.location-list {
 }
 li.left-menu {
     list-style: none;
-    margin: 15px 0;
+    margin: 35px 0;
     display: flex;
     gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.left-menu h5 {
+    color: black;
 }
 ul.nav.nav-tabs {
-    margin-top: 189px;
+    margin-top: 120px;
 }
 .img{
 	width: 200px;
@@ -153,7 +166,7 @@ ul.nav.nav-tabs {
     padding-bottom: 0;
 }
 .kt {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 h6 {
     background: #fff5f5;
@@ -177,9 +190,10 @@ h6 {
     justify-content: center;
     align-items: center;
 }
-.img-last{
-	width: 250px;
-	height: 250px;
+.img-last {
+    width: 245px;
+    height: 250px;
+    margin-right: 10px;
 }
 .last-img {
     display: flex;
@@ -188,11 +202,199 @@ h6 {
 .footer {
     margin-top: 15px;
     width: 100%;
-    height: 300px;
     background: #0c0c3b;
 }
 .footer .col-sm-3{
-	margin-left: 15px;
+ 	padding: 0 0;
+}
+.index-img {
+    height: 65px;
+    width: 100px;
+}
+.fa-fa-logo {
+    color: white;
+    margin-top: 23px;
+    margin-bottom: 40px;
+}
+i.fa-brands.fa-facebook-f {
+    font-size: 19px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    border: 2px solid white;
+    margin-right: 2px;
+}
+i.fa-brands.fa-google-plus-g {
+    font-size: 18px;
+    padding: 9px 7px;
+    border-radius: 100px;
+    border: 2px solid white;
+    margin-right: 2px;
+}
+i.fa-brands.fa-linkedin-in {
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 100px;
+    border: 2px solid white;
+    margin-right: 2px;
+}
+i.fa-brands.fa-instagram {
+    padding: 10px 11px;
+    font-size: 18px;
+    border-radius: 100px;
+    border: 2px solid white;
+    margin-right: 2px;
+}
+.col-sm-3 {
+    margin-top: 25px;
+}
+h5.head {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+ul {
+    padding: 0 0;
+}
+li {
+    list-style: none;
+    color: white;
+}
+button {
+    padding: 8px 10px;
+    margin: 30px 0;
+    color: grey;
+}
+button.last-btn {
+    background: #17c9d3;
+    color: white;
+}
+.row.footer-row {
+    border-bottom: 2px solid white;
+}
+.end-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+.collapse:not(.show) {
+    display: block;
+}
+.collapse-btn {
+    display: none;
+}
+.col-sm-12.d-flex {
+    display: flex;
+    align-items: center;
+}
+}
+
+@media only screen and (max-width: 767px) {
+	button.first-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .navbar-toggle {
+    background: #0dcaf0;
+    color: white;
+    padding: 2px 11px;
+    border-radius: 10px;
+    display: block;
+    font-size: 25px;
+    border: 2px solid white;
+}
+p.btn-para {
+    margin: 0 0;
+}
+ul.nav.nav-tabs {
+    margin-top: 0;
+}
+.col-md-6 {
+    text-align: center;
+}
+.col-md-6 h4 {
+    margin: 15px;
+}
+h3 {
+    margin-bottom: 15px;
+}
+li.left-menu {
+    list-style: none;
+    margin: 15px 0;
+    display: block;
+}
+.img-box {
+    padding: 30px;
+    padding-bottom: 0;
+}
+.img{
+	width: 150px;
+	height: 150px;
+}
+.header li {
+    padding: 0 0;
+}
+.circle-logo {
+    top: 150px;
+}
+h6 {
+    width: 120px;
+    height: 120px;
+}
+.row.footer-row {
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+button.btn.btn-info {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+}
+.img-last {
+    margin: 7px 15px;
+    width: 356px;
+    height: 300px;
+}
+.header .navbar-toggle {
+    background: #0dcaf0;
+}
+.logo-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header li:last-child {
+   margin: 0;
+}
+li.nav-item {
+    margin: -20px;
+}
+.mt-3 {
+   margin-top: 0;
+}
+.kt {
+    margin-top: 180px;
+}
+ul.index-list {
+    display: block;
+    width: 100%;
+}
+li.nav-item {
+    font-size: 17px;
+    margin: 13px;
+}
+.header li {
+    padding: 10px 12px;
+    display: block;
+    width: 100px;
+}
+.header li:hover{
+	background: #0dcaf0;
+}
+.row.footer-row {
+    padding: 0 20px;
+}
 }
 </style>
 </head>
@@ -201,30 +403,41 @@ h6 {
 	<div class="header">
 		<div class="container">
 			<div class="row">
-			<div class="col-sm-12">				
+			<div class="col-sm-12 d-block d-md-flex">	
+				<div class="logo-btn">
+			<div class="logo">			
 		<img src="images/index-1.jpg" class="index-img">
-		<ul class="index-list">
-			<li><a href="#"><i class="fa-solid fa-list"></i></a>
-			<p>Categories</p>
-			</li>
-			<li><a href="#"><i class="fa fa-fax" aria-hidden="true"></i></a>
-			<p>Manageing list</p>
-			</li>
-			<li><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-				<p>Creat event</p>
-			</li>
-			<li><a href="#"><i class="fa-solid fa-circle-user"></i></a>
-				<p>Log-in</p>
-			</li>
-			<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i></a>
-				<p>sing-up</p>
-			</li>
-		</ul>
-	</div>
+            </div>
+            <div class="collapse-btn">
+			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       <i class="fa-solid fa-bars"></i>
+      </button>
+  </div>
+</div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right index-list">
+		        <li><a href="#"><i class="fa-solid fa-list"></i></a>
+					<p>Categories</p>
+		        </li>
+		        <li><a href="#"><i class="fa fa-fax" aria-hidden="true"></i></a>
+					<p>Manageing list</p>
+				</li>
+		        <li><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+						<p>Creat event</p>
+				</li>
+		        <li><a href="#"><i class="fa-solid fa-circle-user"></i></a>
+						<p>Log-in</p>
+					</li>
+		        <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i></a>
+						<p>sing-up</p>
+					</li>
+				</ul>
+		    </div>
+  </div>
+</div>
 </div>
 </div>
 </div><!-------header-end----->
-
 	<div class="main-box"><!-------main-box-start---->
 		<div class="container">
 						<div class="row">
@@ -232,11 +445,11 @@ h6 {
 			<div class="main-body">
 				<h4>KIA,ORA WELCOME!</h4>
 		<div class="btn-box">
-			<button>
+			<button class="first-btn">
 				<input type="search" name="search" placeholder="select Categories">
 				<i class="fa-solid fa-magnifying-glass"></i>
 			</button>
-			<button>
+			<button class="first-btn">
 				<input type="text" name="loc" placeholder="select-location">
 				<i class="fa-solid fa-location-dot"></i>
 			</button>
@@ -331,27 +544,65 @@ h6 {
 </div><!----img-menu-end---->
 
 <div class="footer">
-	<div class="col-sm-3">
+	<div class="container">
+		<div class="row footer-row">
+	<div class="col-sm-3 col-xs-3">
 		<img src="images/index-1.jpg" class="index-img">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<div class="fa-fa-logo">
+		<i class="fa-brands fa-facebook-f"></i>
+		<i class="fa-brands fa-google-plus-g"></i>
+		<i class="fa-brands fa-linkedin-in"></i>
+		<i class="fa-brands fa-instagram"></i>
+	</div>
 	</div>
 
-	<div class="col-sm-3">
+	<div class="col-sm-3  col-xs-3 About-us-menu">
+		<h5 class="head">NAVIGATE</h5>
+		<ul>
+			<li>About us</li>
+			<li>Read our blog</li>
+			<li>Featured Business</li>
+			<li>Join us</li>
+		</ul>
+	</div>
+	
+	<div class="col-sm-3 col-xs-3">
+		<h5 class="head">USEFULL LINKS</h5>
+		<ul>
+			<li>Manage a listing</li>
+			<li>Share local event</li>
+			<li>Contact us</li>
+			<li>Private policy</li>
+		</ul>
 		
 	</div>
 	
-	<div class="col-sm-3">
-		
+	<div class="col-sm-3 col-xs-3">
+		<h5 class="head">SUSCRIBE MORE UPDATE</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet.</p>
+		<button>Enter your suscribe<button class="last-btn">SUSCRIBE</button></button>
 	</div>
-	
-	<div class="col-sm-3">
-		
 	</div>
-	
-	
+		<div class="end-line">
+		<p>Term & condition <span>Privacy policy</span></p>
+		<p>2019 All right reserved</p>
+	</div>
+	</div>
+
 </div>
 
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
