@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+.w3-row-padding{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}	
+.header {
+    text-align: center;
+}
+button.top-btn {
+    padding: 16px 13px;
+    font-size: 17px;
+    background: powderblue;
+    border: none;
+    margin-bottom: 21px;
+    border-radius: 5px;
+    color: #717171;
+}
+.header h2 {
+    font-size: 33px;
+    color: grey;
+    font-weight: 700;
+    font-family: cursive;
+}
+.header p {
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    font-family: monospace;
+}
+.w3-row-padding.guru {
+    grid-gap: 11px;
+}
+
+.w3-row-padding.guru img {
+    margin: 6px 0;
+}
+</style>
+</head>
+<body>
+<div class="header">
+ <h2>PHOTOLIO</h2>
+<P>A template made by w3.css for photographers.</P>
+<p class="w3-padding-16">
+<button class="top-btn">Toggle grid padding</button>
+</p>
+</div>
+<div class="w3-row-padding">
+	<div class="column-1">
+	<img src="images/rocks.jpg" style="width:100%;">
+	<img src="images/sound.jpg" style="width:100%;">	
+	<img src="images/woods.jpg" style="width:100%;">	
+	<img src="images/rock.jpg" style="width:100%;">	
+	<img src="images/nature.jpg" style="width:100%;">
+	<img src="images/mist.jpg" style="width:100%;">			
+
+	</div>
+	<div class="column-2">
+		<img src="images/coffee.jpg" style="width:100%;">	
+		<img src="images/bridge.jpg" style="width:100%;">	
+		<img src="images/notebook.jpg" style="width:100%;">	
+		<img src="images/london.jpg" style="width:100%;">	
+		<img src="images/rocks.jpg" style="width:100%;">
+		<img src="images/avatar_g.jpg" style="width:100%;">		
+		
+	</div>
+	<div class="column-3">
+		<img src="images/mist.jpg" style="width:100%;">	
+		<img src="images/workbench.jpg" style="width:100%;">	
+		<img src="images/gondol.jpg" style="width:100%;">	
+		<img src="images/sky.jpg" style="width:100%;">	
+		<img src="images/lights.jpg" style="width:100%;">
+		<img src="images/workshop.jpg" style="width:100%;">	
+	</div>
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".w3-row-padding").toggleClass('guru');
+  });
+});
+</script>
+</body>
+</html>
