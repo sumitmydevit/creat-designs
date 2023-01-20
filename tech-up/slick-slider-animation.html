@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+	 <script src="https://kit.fontawesome.com/0c07aae8c4.js" crossorigin="anonymous"></script>
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<style type="text/css">
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'montserrat' sans-serif ;
+}	
+.banner-slider .slide {
+    background-image: linear-gradient(rgba(0, 0 ,0 ,0.4), rgba(0, 0 ,0 ,0.4)), url(images/home-decor.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  	display: flex;
+  	align-items: center;
+  	padding-left: 80px;
+}
+.banner-slider .slide-three {
+	background-image: linear-gradient(rgba(0, 0 ,0 ,0.4), rgba(0, 0 ,0 ,0.4)), url(images/home-decoration.jpg);
+}
+.banner-slider .slide-two {
+	background-image: linear-gradient(rgba(0, 0 ,0 ,0.4), rgba(0, 0 ,0 ,0.4)), url(images/home-decoration-2.jpg);
+}
+.slide-content {
+    color: #fff;
+    max-width: 650px;
+    padding: 25px 25px 0 25px;
+    border: 4px 4px 0 4px;
+    border: solid;
+    border-color: #f8a000;
+    border-bottom: none;
+}
+.slide-content p {
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.slide-content h2 {
+    font-size: 57px;
+    line-height: 70px;
+    margin: 25px 0;
+}
+a.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 40px;
+    font-weight: 600;
+    display: inline;
+    outline: 2px solid white;
+    margin: 10px;
+    background-color: #ff6f00;
+}
+a.btn:hover {
+    background: white;
+    outline: 2px solid #ff6f00;
+    color: #ff6f00;
+}
+a.btn.btn-transparent {
+    background: transparent;
+}
+.banner-slider .slick-slider{
+	margin-bottom: 0px;
+}
+.banner-slider.slick-dots {
+   width: 100%;
+   bottom: 6%;
+}
+.banner-slider .slick-dots li button::before {
+    font-size: 16px;
+    color: #ff6f00;
+}
+.banner-slider .slick-dots {
+    bottom: 20px;
+}
+.banner-slider .slick-next {
+    right: 25px;
+}
+.slick-next:before {
+    content: '→';
+    font-size: 45px;
+}
+.banner-slider .slick-prev {
+    left: 25px;
+    z-index: 99;
+}
+.slick-prev:before {
+    content: '←';
+    font-size: 45px;
+}
+.slick-prev:before, .slick-next:before {
+    opacity: .75;
+    color: #ff6f00;
+}
+@media only screen and (min-width: 767px){
+.slide-content h2 {
+    font-size: 49px;
+    margin: 21px 0;
+}
+.banner-slider .slide {
+    padding-left: 71px;
+}
+.slick-prev:before {
+    content: '←';
+    font-size: 40px;
+}
+.slick-next:before {
+    content: '→';
+    font-size: 40px;
+}
+.slide-content {
+    max-width: 600px;
+}
+}
+@media only screen and (max-width: 767px) {
+	.slide-content p {
+    font-size: 17px;
+    line-height: 10px;
+}
+.slide-content h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 15px 0;
+}
+.slick-prev:before {
+    content: '←';
+    font-size: 30px;
+}
+.slick-next:before {
+    content: '→';
+    font-size: 30px;
+}
+.banner-slider .slick-next {
+    right: 12px;
+}
+.banner-slider .slick-prev {
+    left: 0;
+    z-index: 99;
+}
+a.btn {
+    padding: 11px 7px;
+    font-size: 13px;
+}
+.slide-content {
+    max-width: 354px;
+    padding: 25px 25px 0 25px;
+    text-align: center;
+}
+.banner-slider .slide {
+    padding-left: 35px;
+}
+.banner-slider .slick-dots li button::before {
+    font-size: 12px;
+}
+}
+</style>
+</head>
+<body>
+	<section class="banner-slider single-item">
+		<div class="slide">
+			<div class="slide-content">
+				<p>Welcome to home tnterial</p>
+				<h2>Making your home more beautiful</h2>
+				<div class="btn-wrap">
+					<a href="#" class="btn btn-transparent">View more</a>
+					<a href="#" class="btn">Our portofolio</a>
+				</div>
+			</div>
+		</div>
+		<div class="slide slide-two">
+			<div class="slide-content">
+				<p>Welcome to home tnterial</p>
+				<h2>Best idea for make more beautiful home</h2>
+				<div class="btn-wrap">
+					<a href="#" class="btn btn-transparent">View more</a>
+					<a href="#" class="btn">Our portofolio</a>
+				</div>
+			</div>
+		</div>
+		<div class="slide slide-three">
+			<div class="slide-content">
+				<p>Welcome to home tnterial</p>
+				<h2>Making your home more beautiful</h2>
+				<div class="btn-wrap">
+					<a href="#" class="btn btn-transparent">View more</a>
+					<a href="#" class="btn">Our portofolio</a>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+
+$('.single-item').slick({
+  dots: true,
+  arrows:true,
+
+});
+</script>
+</body>
+</html>

@@ -5,14 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/0c07aae8c4.js" crossorigin="anonymous"></script>
   <style type="text/css">
- header {
+header {
     background: whitesmoke;
-} 
+    height: 80px;
+}
+header.main-header.darkHeader {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
 .container {
-    width: 1170px;
+    max-width: 1170px;
     text-align: center;
 }
 .head {
@@ -23,9 +34,17 @@
 }
 .head a {
     font-size: 25px;
-    color: black;
+    color: #000;
     font-weight: 600;
     font-family: cursive;
+    text-decoration: none;
+}
+header.main-header.darkHeader .logo a {
+  color: #fff;
+}
+header.main-header.darkHeader .head button {
+  color: #000;
+  background-color: #fff;
 }
 .head button {
     background: black;
@@ -33,11 +52,10 @@
     padding: 6px 12px;
     font-size: 17px;
     border-radius: 5px;
-}	
+}
 .banner {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    background: whitesmoke;
+    width: 100%;
 }
 .banner h1 {
     font-size: 62px;
@@ -50,9 +68,13 @@
     font-size: 26px;
     text-align: center;
 }
+.banner-2 {
+    background: whitesmoke;
+    height: 500px;
+}
 button {
     background: #211f1f;
-    padding: 12px 30px;
+    padding: 10px 40px;
     font-size: 18px;
     color: white;
     border: none;
@@ -98,7 +120,18 @@ button.btn-2 {
     text-align: left!important;
 }
 .main-box {
-    margin-top: 75px;
+    margin: 75px;
+    float: left;
+    overflow: hidden;
+    transition: .5s;
+}
+.main-box:hover img {
+    transform: scale(1.1);
+     
+}
+.col-md-6.ryt-col.col-sm-12 {
+    overflow: hidden;
+    border-radius: 0 25px 25px 0;
 }
 .blank-box {
     background: white;
@@ -128,6 +161,9 @@ button.btn-2 {
     width: 75%;
     height: 300px;
 }
+.col-md-6.inner-column-2 {
+    padding: 50px 50px;
+}
 .inner-box-2 {
     background: #fbfaf8;
     margin-top: 40px;
@@ -143,16 +179,206 @@ button.btn-2 {
 .row{
     margin-top: 150px;
 }
+.col-md-6.graaf-column {
+    padding: 50px 40px;
+}
+.col-md-6.graaf-column-2 {
+    padding: 20px 20px;
+}
 .graaf-row img {
     width: 65%;
     height: 285px;
 }
+.col-md-6.flower-column-2 {
+    padding: 40px 40px;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    background: #353535;
+    margin-top: 45px;
+}
+footer a {
+    color: white;
+    font-size: 35px;
+}
+footer a:hover{
+    color: grey;
+}
+footer ul {
+    padding: 35px 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+footer li {
+    list-style: none;
+}
+.social-link {
+    border-bottom: 2px solid white;
+}
+footer p {
+    color: white;
+    text-align: right;
+    margin: 16px 0;
+}
+@media only screen and (min-width: 767px) {
+    .row {
+    display: flex;
+}
+.banner h1 {
+    font-size: 56px;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 65px;
+}
+.main-box {
+    margin: 30px 40px 30px 40px;
+}
+.inner-box {
+    margin-top: 100px;
+}
+.graaf-row-2 {
+    display: flex;
+}
+.col-md-6.flower-column-2 {
+    padding: 20px 22px;
+}
+.col-md-6.graaf-column {
+    padding: 20px 20px;
+}
+.col-md-6.left-col {
+    height: 550px;
+}
+.main-box img {
+    height: 550px;
+}
+button {
+    padding: 10px 25px;
+    font-size: 18px;
+}
+.inner-box-2 img {
+    width: 75%;
+}
+.inner-box {
+    margin-top: 100px;
+}
+.row {
+    margin-top: 0;
+}
+.inner-box-2 p {
+    font-size: 17px;
+    text-align: left;
+}
+.graaf-row {
+    display: flex;
+}
+.graaf-row img {
+    height: auto;
+    width: 75%;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  .head {
+    display: flex;
+}
+.main-box {
+    display: flex;
+    margin: 25px;
+    height: 413px;
+}
+.col-md-6.left-col h3 {
+    font-size: 17px;
+    padding: 0 0 0 30px;
+    margin-top: 134px;
+}
+.col-md-6.left-col {
+    height: auto;
+}
+.inner-box-2 .row .col-md-6 {
+    width: 100%;
+    padding: 10px 10px;
+}
+.show-btn {
+    padding: 0 0px 0px 28px;
+}
+button.btn-2 {
+    background: #fbce37;
+    font-size: 14px;
+    color: #026451;
+    font-weight: 600;
+    padding: 9px 11px;
+}
+.banner h1 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 45px;
+}
+.inner-box-2 img {
+    width: 75%;
+    height: auto;
+}
+.banner p {
+    margin: 25px 0;
+    font-size: 22px;
+}
+.inner-box h4 {
+    font-size: 26px;
+    text-align: center;
+    font-family: inherit;
+    line-height: 40px;
+    font-weight: 600;
+}
+.logo-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+.row {
+    margin-top: 0px;
+}
+.inner-box-2 .row .col-md-6 {
+    width: 100%;
+}
+button {
+    padding: 11px 18px;
+    font-size: 16px;
+}
+.inner-box-2 p {
+    font-size: 22px;
+    text-align: center;
+    padding: 16px 17px;
+}
+.inner-box-2 h3 {
+    font-size: 35px;
+    text-align: center;
+}
+.graaf-row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+button {
+    padding: 9px 16px;
+    font-size: 15px;
+}
+.inner-box-2 {
+    margin-top: 0px;
+}
+
+
+
+}
 </style>
 </head>
 <body>
-<header>
+
+<!---header-start------>
+<header class="main-header">
 	<div class="container">
-	<div class="head">
+	<div class="head logo-brand">
 	<div class="logo">
 	<a href="#">Type form</a>
 	</div>
@@ -160,75 +386,134 @@ button.btn-2 {
 		<button>Sing up</button>
 	</div>
 	</div>
-	<div class="banner">
+</div>
+</header><!-----header-end----->
+
+
+<!---banner-start---->
+ <div class="banner">
+    <div class="container">
 		<h1>The no-code landing page of your dreams</h1>
 		<p>Rustle up a beautiful landing page in minutes, and rake in the leads like a boss.</p>
 		<div class="btn">
 		<button>Get start it's free</button>
+	   </div>
+	</div>
+</div>
+<!-----banner-end--->
+
+<!----banner-2-start--->
+<div class="banner-2">
+    <div class="container">
+	   <div class="row" id="row-1">
+		  <div class="main-box">
+		        <div class="col-md-6 left-col col-sm-12">
+			     <h3>Hey i am simple style form</h3>
+			    <div class="show-btn">
+			        <button class="btn-2">SHOW ME</button>
+		        </div>
+		        </div>
+		    <div class="col-md-6 ryt-col col-sm-12">
+			    <img src="images/water-surface.jpeg">
+		   </div>
+		</div>
 	</div>
 	</div>
-	<div class="row" id="row-1">
-		<div class="main-box">
-		<div class="col-md-6 left-col">
-			<h3>Hey i am simple style form</h3>
-			<div class="show-btn">
-			<button class="btn-2">SHOW ME</button>
-		</div>
-		</div>
-		<div class="col-md-6 ryt-col">
-			<img src="images/water-surface.jpeg">
-		</div>
-		</div>
-	</div>
-	</div>
-</header>
-<div class="blank-box"></div>
+</div>
+<!----banner-2--end--->
+
+<!---inner-box-start--->
 <div class="inner-box">
 	<div class="container ">
 		<h4>"The conversion rate of the typeform is at 10.6%. For the pace at which I executed this, it beats any smart landing page you could make."</h4>
-		<div class="logo-img">
-			<img src="images/img-3.jpeg">
-            <div class="image-content">
-            <p>Kajal thakur</p>
-        </div>
-		</div>
+		    <div class="logo-img">
+			    <img src="images/img-3.jpeg">
+                <div class="image-content">
+                <p>Kajal thakur</p>
+            </div>
+		   </div>
 	</div>
 </div>
+<!---inner-box-end--->
+
+
+<!---inner-box-2-start---->
 <div class="inner-box-2">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
               <img src="images/feedback.jpg">  
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 inner-column-2">
                 <h3>Get started in minutes </h3>
                 <p>Dive right in with a template that’s ready to go, and launch your page without a line of code. Typeforms can rank on Google, and you can redirect to any URL upon completion.</p>
                 
             </div>
         </div>
+
         <div class="row">
           <div class="graaf-row">
-            <div class="col-md-6">
+            <div class="col-md-6 graaf-column">
                 <h3>Collect quality data </h3>
                 <p>Dive right in with a template that’s ready to go, and launch your page without a line of code. Typeforms can rank on Google, and you can redirect to any URL upon completion.</p> 
             </div>
-              <div class="col-md-6">
+              <div class="col-md-6 graaf-column-2">
               <img src="images/graaf.jpg">  
             </div>
         </div>
     </div>
+
     <div class="row">
           <div class="graaf-row-2">
               <div class="col-md-6">
               <img src="images/flower.jpg">  
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 flower-column-2">
                 <h3>Collect quality data </h3>
                 <p>Dive right in with a template that’s ready to go, and launch your page without a line of code. Typeforms can rank on Google, and you can redirect to any URL upon completion.</p> 
             </div>
         </div>
     </div>
+        <div class="btn">
+        <button style="margin-top: 40px;">sign up it's free</button>
+    </div>
 </div>
 </div>
+<!---inner-box-2-end---->
+
+
+<!---footer-start--->
+<footer>
+    <div class="container">
+        <div class="social-link">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <p>Type form @</p>
+    </div>
+</footer>
+<!---footer-end--->
+
+
+
+
+
+
+
+<script type="text/javascript">
+jQuery(window).scroll(function() {    
+    var scroll = jQuery(window).scrollTop();
+
+    if (scroll >= 300) {
+        jQuery(".main-header").addClass("darkHeader");
+    } else {
+        jQuery(".main-header").removeClass("darkHeader");
+    }
+});
+
+</script>
 </body>
 </html>

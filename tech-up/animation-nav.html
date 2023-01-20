@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+	.container{
+		background: #ffbdc9;
+		width: 100%;
+		height: 100vh;
+		text-align: right;
+	}
+	nav{
+		background: #fff;
+		padding: 10px;
+		box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+	}
+	nav ul li{
+		list-style: none;
+		display: inline-block;
+		padding: 13px 35px;
+		margin: 10px;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 500;
+		color: #777;
+		cursor: pointer;
+		position: relative;
+		z-index: 999;
+		transition: color 0.5s;
+	}
+	nav ul li::after{
+		content: "";
+		background: #f44566;
+		height: 100%;
+		width: 100%;
+		border-radius: 30px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		opacity: 0;
+	}
+	nav ul li:hover{
+		color: white;
+	}
+	nav ul li:hover::after{
+		top: 0;
+		opacity: 1;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Blogs</li>
+				<li>Product</li>
+				<li>Clints</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+		
+	</div>
+</body>
+</html>
